@@ -1,8 +1,8 @@
-const Calculator = require('./Calculator')
-const Logger = require('./Logger')
+const container = require('./Container')
+const TYPES = require('./types')
 
 function sum (a, b) {
-  const calculator = new Calculator(new Logger())
+  const calculator = container.get(TYPES.Calculator)
   calculator.add(a)
   calculator.add(b)
   return calculator.answer()
