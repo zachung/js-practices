@@ -1,5 +1,14 @@
-const standard = require('eslint-config-standard')
-
 module.exports = {
-  ...standard
+  extends: [
+    'standard'
+  ],
+  overrides: [
+    {
+      files: ['tests/**/*'],
+      plugins: ['jest'],
+      env: {
+        'jest/globals': true
+      }
+    }
+  ]
 }
