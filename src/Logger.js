@@ -1,6 +1,8 @@
 class Logger {
-  handle (a, operator, b) {
-    console.log(`${a} ${operator} ${b}`)
+  static handle(a, operator, b) {
+    // eslint-disable-next-line no-console
+    console.log(`${a} ${operator} ${b}`);
   }
 }
-module.exports = Logger
+
+export default Logger;

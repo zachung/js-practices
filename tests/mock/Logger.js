@@ -1,7 +1,8 @@
-const Logger = require('../../src/Logger')
+import Logger from '../../src/Logger';
 
 class MockLogger extends Logger {
-  handle (a, operator, b) {
+  static handle() {
   }
 }
-module.exports = MockLogger
+
+export default MockLogger;

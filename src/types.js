@@ -1,5 +1,5 @@
 const TYPES = {
   Calculator: 'Calculator',
-  Logger: 'Logger'
-}
-module.exports = TYPES
+  Logger: 'Logger',
+};
+export default TYPES;
