@@ -4,11 +4,14 @@
   "description": "```shell docker build -t js-practices . docker run -v .:/srv/app -p 8888:80 --rm --name my-practices -it js-practices bash ```",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint sum.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
     "jest": "^29.7.0"
   }
 }
