@@ -1,0 +1,11 @@
+{
+  "name": "js-practices",
+  "version": "1.0.0",
+  "description": "```shell docker build -t js-practices . docker run -v .:/srv/app -p 8888:80 --rm --name my-practices -it js-practices bash ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
